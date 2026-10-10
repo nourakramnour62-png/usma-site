@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سجل بطولات اتحاد العاصمة - USMA 1937</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a;
+            border-bottom: 3px solid #e60000;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e60000;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #e60000;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .page-title span {
+            color: #e60000;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        .trophies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .trophy-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trophy-card:hover {
+            transform: translateY(-5px);
+            border-color: #e60000;
+            box-shadow: 0 5px 20px rgba(230, 0, 0, 0.3);
+        }
+
+        .trophy-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .trophy-title {
+            font-size: 20px;
+            color: #e60000;
+            margin-bottom: 10px;
+        }
+
+        .trophy-count {
+            font-size: 14px;
+            background-color: #e60000;
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .trophy-years {
+            color: #ccc;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 30px;
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #e60000;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: #e60000;
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            width: 100%;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-text">USMA 1937</a>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="trophies.html" class="active">البطولات</a>
+            <a href="#">الأخبار</a>
+            <a href="#">الفريق</a>
+            <a href="#">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">سجل <span>بطولات النادي</span></h1>
+        <p class="subtitle">تاريخ حافل بالإنجازات والألقاب الوطنية والقارية</p>
+
+        <div class="trophies-grid">
+            <!-- الرابطة المحترفة الأولى -->
+            <div class="trophy-card">
+                <span class="trophy-icon">🏆</span>
+                <h2 class="trophy-title">الرابطة الجزائرية المحترفة الأولى</h2>
+                <span class="trophy-count">8 ألقاب</span>
+                <p class="trophy-years">1963, 1996, 2002, 2003, 2005, 2014, 2016, 2019</p>
+            </div>
+
+            <!-- كأس الجزائر -->
+            <div class="trophy-card">
+                <span class="trophy-icon">🏆</span>
+                <h2 class="trophy-title">كأس الجزائر</h2>
+                <span class="trophy-count">8 ألقاب</span>
+                <p class="trophy-years">1971, 1981, 1988, 1997, 1999, 2001, 2003, 2013</p>
+            </div>
+
+            <!-- كأس الكونفيدرالية الأفريقية -->
+            <div class="trophy-card">
+                <span class="trophy-icon">🌍</span>
+                <h2 class="trophy-title">كأس الكونفيدرالية الأفريقية</h2>
+                <span class="trophy-count">لقب واحد</span>
+                <p class="trophy-years">2023</p>
+            </div>
+
+            <!-- كأس السوبر الأفريقي -->
+            <div class="trophy-card">
+                <span class="trophy-icon">🌍</span>
+                <h2 class="trophy-title">كأس السوبر الأفريقي</h2>
+                <span class="trophy-count">لقب واحد</span>
+                <p class="trophy-years">2023</p>
+            </div>
+
+            <!-- كأس السوبر الجزائري -->
+            <div class="trophy-card">
+                <span class="trophy-icon">🥇</span>
+                <h2 class="trophy-title">كأس السوبر الجزائري</h2>
+                <span class="trophy-count">لقبان</span>
+                <p class="trophy-years">2013, 2016</p>
+            </div>
+
+            <!-- كأس العرب للأندية الأبطال -->
+            <div class="trophy-card">
+                <span class="trophy-icon">⭐</span>
+                <h2 class="trophy-title">كأس الاتحاد العربي للأندية</h2>
+                <span class="trophy-count">لقب واحد</span>
+                <p class="trophy-years">2013</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="btn-back">العودة للرئيسية</a>
+        </div>
+    </main>
+
+    <footer>
+        تصميم ومطوَّر بواسطة <strong>جليل</strong> | جميع الحقوق محفوظة © 2026
+    </footer>
+
+</body>
+</html>
